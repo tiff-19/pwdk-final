@@ -1,0 +1,15 @@
+name: clone repositories frontend
+hosts: final
+ tasks:
+   git:
+     clone:
+       src: https://github.com/PurwadhikaDev/erwin-rigup-frontend
+       dest: ~/final/ansible/
+
+name: clone repositories backend
+hosts: final
+ tasks:
+   git:
+     clone:
+       src: https://github.com/PurwadhikaDev/erwin-rigup-backend
+       dest: ~/final/ansible/       
